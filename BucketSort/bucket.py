@@ -85,6 +85,6 @@ for i in range(len(x)):
     y.append(geraLista(x[i]))
 
 for i in range(len(x)):
-    tempo.append(timeit.timeit("bucket_sort({})".format(y[i]), setup="from __main__ import bucket_sort",number=1))
+    tempo.append(timeit.timeit("bucketSort({})".format(y[i]), setup="from __main__ import bucketSort",number=1))
 
 desenhaGrafico(x, tempo, "graphTempo.png")
