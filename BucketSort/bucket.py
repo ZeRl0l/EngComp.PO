@@ -77,7 +77,7 @@ def desenhaGrafico(x, y, file_name, xl="Entradas", yl="Saídas"):
     plt.xlabel(xl)
     fig.savefig(file_name)
 
-x = [100000, 200000, 400000, 500000, 1000000, 2000000]
+x = [10000, 20000, 40000, 50000, 100000, 200000]
 y = []
 tempo = []
 
