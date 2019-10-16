@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include "tree.h"
+#include <stdio.h>
 
 using namespace std;
 
@@ -266,7 +267,7 @@ void Arvore234::remover(int valor){
 	NO *atual = busca(valor);
 	NO *tempNo;
 	int valorTroca;
-	
+
 	if(atual!=0){
 		if(!eFolha(&atual)){
 			//encontre uma folha com o sucessor S(valorTroca) mais próximo de K(valor)
@@ -380,6 +381,6 @@ char menu_principal()
     cout <<"  3 - Buscar na arvore\n" << endl;
 	cout <<"  4 - Imprimir arvore\n" << endl;
     cout <<"  0 - Sair do aplicativo\n\n" << endl;
-    cout <<"  ESCOLHA UM OPCAO: " << endl;
+    cout <<"  ESCOLHA UM OPCAO: ";
     return getchar();
 }
